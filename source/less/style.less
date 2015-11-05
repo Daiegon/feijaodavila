@@ -1,0 +1,248 @@
+/** VARIAVEIS **/ 
+@principal: #0d95c2;
+@secundaria: #0a779b;
+@contraste: #f4730b;
+
+@fontPrimaria:'Open Sans', sans-serif;;
+@fontSecundaria: 'Montserrat', sans-serif;
+
+
+body{
+	background: @principal;
+	font-family: @fontPrimaria;
+	color: #fff;
+	font-size: 100%;
+}
+
+header.container{
+	padding: 15px 0;
+
+	.logo{
+		text-align: center;
+	}
+
+	.menu{
+		padding: 15px 0;
+		.menu-btn{
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			padding: 10px 15px;
+			height: 40px;
+			background-color: #fff;
+			color: @principal;
+			box-shadow: 0px 5px 0px 0px @secundaria;
+			line-height: 25px;
+			
+			p{
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 2em;
+				font-family: @fontSecundaria;
+			}
+
+			span, i{
+				font-size: 2em;
+			}
+
+			&:hover{
+				background-color: @contraste;
+				color: #fff;
+			}
+		}
+	}
+}
+
+#slide{
+	.carousel-inner{
+		.item{
+			width: 100%;
+    		height: 300px;
+		}
+	    
+	    .img1{
+	    	 background: url(../images/slide-1.jpg) no-repeat top;
+	    	 background-size:cover;
+	    }
+
+	    .img2{
+	    	 background: url(../images/slide-2.jpg) no-repeat top;
+	    	 background-size:cover;
+	    }
+
+	    .img3{
+	    	 background: url(../images/slide-3.jpg) no-repeat top;
+	    	 background-size:cover;
+	    }
+	}
+	.carousel-caption{
+		text-transform: uppercase;
+		bottom:25%;
+		h1{
+			font-weight: bold;
+			line-height: 0.9em;
+			padding: 0;
+			margin: 0;
+			font-size: 3em;
+		}
+		h2{
+			font-weight: 400;
+			font-size: 1.7em;
+			padding: 0;
+			margin-top: 10px;
+		}
+	}
+}
+
+#content{
+	padding: 20px 0 0 0;
+	.info{
+		padding: 20px 0;
+		text-align: center;
+		.icon{
+			padding: 20px;
+			border-radius: 50px;
+			background-color: #fff;
+			color: @contraste;
+			font-size: 3em;
+			margin-bottom: 15px;
+		}
+	}
+
+	.cardapio{
+		padding: 20px 0;
+		margin: 20px 0 0 0;
+		background: url(../images/background-madeira.jpg) no-repeat top;
+	    background-size:cover;
+	    .lista-cardapio{
+	    	padding: 10px 0;
+	    	li{
+	    		list-style: none;
+	    		margin: 20px 0;
+	    		font-size: 1.8em;
+	    	}
+	    }
+	}
+
+	.sobre{
+		padding: 0;
+		.restaurante{
+			height: 200px;
+			background: url(../images/restaurante.jpg) no-repeat  center;
+			background-size:cover;
+		}
+		.info{
+			.descricao{
+				margin: 0 auto;
+				width: 80%;
+				text-align: justify !important;
+			}
+		}
+	}
+	.testemunho{
+		padding: 20px 0 0 0;
+		background: url(../images/background-testemunho.jpg) no-repeat  center;
+		background-size:cover;
+		#testemunho{
+			.carousel-inner{
+				.carousel-caption{
+					bottom:15%;
+				}
+				.item{
+					height: 300px;
+					img{
+						display: block;
+						margin: 5px auto;
+						border-radius: 100px;
+						border: 5px solid #fff;
+					}
+					p{
+						font-size: 1.8em;
+					}
+				}
+			}
+			.carousel-control{
+				background: none !important;
+			}
+		}
+	}
+}
+
+footer{
+	padding: 0 !important;
+	text-align: center;
+	font-size: 1.5em;
+	.cartoes{
+		padding: 10px 0;
+		background-color: #fff;
+		img{
+			width: 320px;
+		}
+	}
+	.copyright{
+		padding: 10px 0;
+	}
+}
+
+
+/** CLASSES **/
+.botao{
+	display: inline-block;
+	padding: 15px 50px;
+	margin: 10px auto 20px auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	font-family: @fontSecundaria;
+	font-weight: 700;
+}
+
+.botao-contraste{
+	background-color: @contraste;
+	box-shadow: 0px 5px 0px 0px @secundaria;
+	color: #fff;
+	&:hover{
+		background-color: #fff;
+		color: @contraste;
+		text-decoration: none;
+	}
+}
+
+.botao-light{
+	background-color: @secundaria;
+	//box-shadow: 0px 5px 0px 0px @secundaria;
+	color: #fff;
+	&:hover{
+		background-color: #fff;
+		color: @contraste;
+		text-decoration: none;
+	}
+}
+
+.title{
+	text-align: center;
+	h4{
+		text-transform: uppercase;
+		font-size: 2.5em;
+		padding:0;
+		margin:0;
+		span{
+			font-weight: 700;
+		}
+	}
+	hr.small{
+		width: 30%;
+		border-top: 3px solid #fff;
+		margin:5px auto; 
+	}
+}
+
+.descricao{
+	padding-top: 20px;
+	font-size: 1.6em;
+}
+
+.destaca{
+	font-family: @fontSecundaria;
+	font-weight: 700;
+}
