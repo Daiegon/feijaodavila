@@ -11,11 +11,12 @@ var jade = require('gulp-jade');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var concat = require('gulp-concat');
+var minifyHTML = require('gulp-minify-html');
 
 //TASKS
 
-	// --CSS
-	gulp.task('css', function () {
+	// --LESS
+	gulp.task('less', function () {
 	  return gulp.src('source/less/*.less')
 	    .pipe(less({ paths: [ 'source/less'] }))
 	    .pipe(autoprefixer())
@@ -25,9 +26,12 @@ var concat = require('gulp-concat');
 	    .pipe(browserSync.reload({stream:true}))
 	});
 
-	// --BOOTSTRAP CSS
-	gulp.task('bootstrap', function () {
-	  return gulp.src('bower_components/bootstrap-css/css/bootstrap.min.css')
+	// -- CSS
+	gulp.task('css', function () {
+	  return gulp.src([
+	  	'bower_components/bootstrap-css/css/bootstrap.min.css',
+	  	'source/css/*.css'
+	  	])
 	    .pipe(gulp.dest('_build/source/css'))
 	});
 
@@ -55,6 +59,9 @@ var concat = require('gulp-concat');
 		gulp.src([
 		    'bower_components/jquery/dist/jquery.js',
 		    'bower_components/bootstrap-css/js/bootstrap.js',
+		    'source/js/ekko-lightbox.min.js',
+		    'source/js/jquery.easing.min.js',
+		    'source/js/scripts.js'
 		  ])
 	    .pipe( concat('scripts.min.js') ) // concat pulls all our files together before minifying them
 	    .pipe(uglify())
@@ -72,12 +79,26 @@ var concat = require('gulp-concat');
 	        .pipe(gulp.dest('_build/source/images'));
 	});
 
+	// -- MINIFY HTML
+	gulp.task('minify-html', function() {
+	  var opts = {
+	    conditionals: true,
+	    spare:true
+	  };
+	 
+	  return gulp.src('source/*.html')
+	    .pipe(minifyHTML(opts))
+	    .pipe(gulp.dest('./_build/'))
+	    .pipe(browserSync.reload({stream:true}))
+	});
+
 	// --WATCH
 	gulp.task('watch', function () {
-	   gulp.watch('source/less/*.less', ['css']);
+	   gulp.watch('source/less/*.less', ['less']);
 	   //gulp.watch('source/jade/*.jade', ['html']);
-	   gulp.watch('source/index.html', ['html']);
+	   gulp.watch('source/index.html', ['minify-html']);
 	   gulp.watch('source/images/*', ['img']);
+	   gulp.watch('source/js/*', ['js']);
 	});
 
 

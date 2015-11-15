@@ -4,11 +4,15 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+		
+		<meta name="description" content"Com Especialidade na Feijoada Tradicional Brasileira, o Restaurante se destaca no Município de São João de Meriti e recebe não só clientes da Baixada Fluminense como das zonas urbanas do Rio de Janeiro.">
+		<meta name="keywords" content="Feijoada, Restaurante de Feijoada, Restaurante São João de Meriti">
+		<meta name="author" content="Restaurante Feijão da Vila">
+
 		<!-- Android Lolipop Theme Color -->
     	<meta name="theme-color" content="#0d95c2">
 
-		<title>Restaurante Feijão da Vila</title>
+		<title>Restaurante Feijão da Vila - Feijoada Brasileira em São João de Meriti</title>
 
 		<!-- Bootstrap CSS -->
 		<link href="source/css/bootstrap.min.css" rel="stylesheet">
@@ -19,76 +23,143 @@
 		<!-- STYLE -->
 		<link href="source/css/style.css" rel="stylesheet">
 
+		<!-- LIGHTBOX -->
+		<link href="source/css/ekko-lightbox.min.css" rel="stylesheet">
+
 		<!-- GOOGLE FONTS -->
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:600' rel='stylesheet' type='text/css'>
 
+		
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+
 	</head>
 	<body>
 		
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-12">
-					<header class="container">
-						<div class="col-sm-12 logo text-center">
-							<img src="source/images/logo-feijao-da-vila.png" alt="" >
+				<header class="container">
+						<div class="col-sm-12 col-md-3 col-lg-3 logo text-center">
+							<a href="http://www.feijaodavila.com.br" title="Restaurante Feijão da Vila">
+								<img src="source/images/logo-feijao-da-vila.png" alt="Restaurante Feijão da Vila" >
+							</a>
 						</div>
 						<!-- /.col-sm-12 -->
-						<nav class="col-sm-12 menu">
-							<div class="col-xs-8">
-								<a href="#" class="menu-btn">
-									<div class="col-xs-8"><p>Menu</p></div>
-									<div class="col-xs-4">
-										<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-									</div>									
-								</a>
+						<nav class="col-sm-12 col-md-8 col-lg-7 menu">
+							<div class="row hidden-md hidden-lg">
+								<div class="col-xs-8">
+									<a href="#" class="menu-btn mobmenu">
+										<div class="col-xs-8"><p>Menu</p></div>
+										<div class="col-xs-4">
+											<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+										</div>									
+									</a>
+								</div>
+								<!-- /.col-xs-8 -->
+								<div class="col-xs-4">
+									<a href="https://www.facebook.com/feijao.davila?fref=ts" class="menu-btn" target="_blank">
+										<i class="fa fa-facebook-official"></i>
+									</a>
+								</div>
+								<!-- /.col-xs-4 -->
 							</div>
-							<!-- /.col-xs-8 -->
-							<div class="col-xs-4">
-								<a href="#" class="menu-btn">
-									<i class="fa fa-facebook-official"></i>
-								</a>
+							
+							<div class="row">
+								<div class="col-sm-12 col-sm-12">
+									<ul class="menu-nav">
+										<li>
+											<a href="#info" class="page-scroll">Informações</a>
+										</li>
+										<li>
+											<a href="#cardapio" class="page-scroll">Cardápio</a>
+										</li>
+										<li>
+											<a href="#sobre" class="page-scroll">O Restaurante</a>
+										</li>
+										<li>
+											<a href="#testemunhos" class="page-scroll">Testemunhos</a>
+										</li>
+									</ul>
+								</div>
+								<!-- /.col-sm-8 -->
 							</div>
-							<!-- /.col-xs-4 -->
+
 						</nav>
 						<!-- /.col-sm-12 -->
-					</header>
-					<!-- /.container -->
-				</div>
-				<!-- /.col-lg-12 -->
+
+						<div class="col-md-2 col-lg-2 tel hidden-sm hidden-xs">
+							<span class="glyphicon glyphicon-earphone"></span>
+							<p class="destaca">(21) 3754-1120</p>
+						</div>
+						<!-- /.col-md-2 -->	
+
+					<div class="navbar navbar-fixed-bottom ligue hidden-md hidden-lg">
+						<div class="row">
+							<div class="col-xs-12">
+								<a href="tel:02137541120" class="btn-ligue"><span class="glyphicon glyphicon-earphone"></span>Ligar</a>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- /.container -->
 			</div>
 			<!-- /.row -->
 
 			<div class="row">
 				<div id="slide" class="carousel slide" data-ride="carousel">
-				    <ol class="carousel-indicators">
+				    <ol class="carousel-indicators sr-only">
 				        <li data-target="#slide" data-slide-to="0" class=""></li>
 				        <li data-target="#slide" data-slide-to="1" class=""></li>
 				        <li data-target="#slide" data-slide-to="2" class="active"></li>
 				    </ol>
 				    <div class="carousel-inner">
-		    			 <div class="carousel-caption">
-		                    <h1 class="destaca">A Melhor Feijoada</h1>
-		                    <h2>em São João de Meriti</h2>
-		                </div>
 				        <div class="item active img1">
 				            <!-- <img src="source/images/slide-1.jpg" alt="Second slide"> -->
 				            <div class="container">
+				            	<div class="carousel-caption">
+				                    <h1 class="destaca">A Feijoada Tradicional</h1>
+				                    <h2>em São João de Meriti</h2>
+				                </div>
 				            </div>
 				        </div>
 				        <div class="item img2">
 				        	<!-- <img src="source/images/slide-2.jpg" alt="Second slide"> -->
 				            <div class="container">
+				            	<div class="carousel-caption">
+				                    <h1 class="destaca">tempero e sabor</h1>
+				                    <h2>do jeitinho brasileiro</h2>
+				                </div>
 				            </div>
 				        </div>
 				        <div class="item img3">
 				            <!-- <img src="source/images/slide-3.jpg" alt=" slide"> -->
 				            <div class="container">
+				            	<div class="carousel-caption">
+				                    <h1 class="destaca">gosto e sabor</h1>
+				                    <h2>no peito de frango</h2>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="item img4">
+				            <!-- <img src="source/images/slide-3.jpg" alt=" slide"> -->
+				            <div class="container">
+				            	<div class="carousel-caption">
+				                    <h1 class="destaca">experiência saborosa</h1>
+				                    <h2>no contra filé</h2>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="item img5">
+				            <!-- <img src="source/images/slide-3.jpg" alt=" slide"> -->
+				            <div class="container">
+				            	<div class="carousel-caption">
+				                    <h1 class="destaca">gosto e tradição</h1>
+				                    <h2>no carré à mineira</h2>
+				                </div>
 				            </div>
 				        </div>
 				    </div>
@@ -99,7 +170,7 @@
 			<!-- /.row -->
 			
 			<div id="content">
-				<div class="row">
+				<div class="row" id="info">
 					<div class="col-lg-12">
 						<div class="container">
 							<div class="col-sm-6 info">
@@ -137,7 +208,7 @@
 				</div>
 				<!-- /.row -->
 
-				<div class="row">
+				<div class="row" id="cardapio">
 					<div class="col-lg-12 cardapio text-center">
 						<div class="container">
 							<div class="title">
@@ -145,12 +216,37 @@
 								<hr class="small">
 							</div>
 							<ul class="lista-cardapio">
-								<li>FEIJOADA COMPLETA</li>
-								<li>CONTRA FILÉ</li>
-								<li>CARRÉ COM FRITAS</li>
-								<li>CONTRA FILÉ A MINEIRA</li>
-							</ul>
-							<a href="#" class="botao botao-light">Veja Fotos</a>
+								<li>
+									<p>FEIJOADA COMPLETA</p>
+									<a href="./source/images/slide-2.jpg" data-toggle="lightbox" data-gallery="cardapio" data-title="FEIJOADA COMPLETA">
+										 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+										 Ver Foto
+									</a>
+								</li>
+								<li>
+									<p>contra filé com garnição</p>
+									<a href="./source/images/slide-4.jpg" data-toggle="lightbox" data-gallery="cardapio" data-title="contra filé com garnição">
+										<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+										 Ver Foto
+									</a>
+								</li>
+								<li>
+									<p>carré à mineira</p>
+									<a href="./source/images/slide-5.jpg" data-toggle="lightbox" data-gallery="cardapio" data-title="carré à mineira">
+										<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+										 Ver Foto
+									</a>
+								</li>
+								<li>
+									<p>peito de frango com guarnição</p>
+									<a href="./source/images/slide-3.jpg" data-toggle="lightbox" data-gallery="cardapio" data-title="peito de frango com guarnição ">
+										<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+										 Ver Foto
+									</a>
+								</li>
+								
+							</ul> 
+							<!-- <a href="#" class="botao botao-light">Veja Fotos</a> -->
 						</div>
 						<!-- /.container -->
 					</div>
@@ -158,9 +254,26 @@
 				</div>
 				<!-- /.row -->
 
-				<div class="row">
+				<div class="modal fade" id="galeria" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+				<div class="row" id="sobre">
 					<div class="col-lg-12 sobre">
-						<div class="col-sm-6 restaurante"></div>
+						<div class="col-sm-6 restaurante">
+							<div id="restaurante" class="carousel slide" data-ride="carousel">
+							    <div class="carousel-inner">
+							        <div class="item active img1"></div>
+							        <div class="item img2"></div>
+							        <div class="item img3"></div>
+							    </div>
+							</div>
+						</div>
 						<!-- /.col-sm-6 -->
 						<div class="col-sm-6 info">
 							<span class="icon glyphicon glyphicon-info-sign"></span>
@@ -169,7 +282,9 @@
 								<hr class="small">
 							</div>
 							<div class="descricao">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugit eius cupiditate fugiat ratione doloremque, amet recusandae ipsum saepe minus veniam maxime odio debitis tempore quis hic a repudiandae adipisci.</p>
+								<p>Tentando construir mais uma história juntos, em Junho de 2008 começando de uma forma modesta, nasce o Restaurante Feijão da Vila. Com Especialidade na Feijoada Tradicional Brasileira, o Restaurante se destaca no Município de São João de Meriti e recebe não só clientes da Baixada Fluminense como das zonas urbanas do Rio de Janeiro.</p>
+
+								<p>Sob a direção de Luiz Carvalhal, sua esposa Mirian Knopp e o filho do casal Luizinho, vindos de uma família de tradição no Comércio do bairro.</p> 
 							</div>
 						</div>
 						<!-- /.col-sm-6 -->
@@ -178,7 +293,7 @@
 				</div>
 				<!-- /.row -->
 
-				<div class="row">
+				<div class="row" id="testemunhos">
 					<div class="col-lg-12 testemunho">
 						<div class="container">
 							<div id="testemunho" class="carousel slide" data-ride="carousel">
@@ -239,7 +354,7 @@
 		</div>
 		<!-- /.container-fluid -->
 
-		<!-- SCRIPTS  - JQUERY - BOOTSTRAP -->
-		<script src="source/js/scripts.min.js"></script>
+		<!-- SCRIPTS - JQUERY - BOOTSTRAP -->
+		<script src="source/js/scripts.min.js"></script>		
 	</body>
 </html>
